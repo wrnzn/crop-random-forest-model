@@ -11,6 +11,9 @@ const secondaryContent = document.getElementById('secondaryContent');
 let probChartInstance = null;
 
 // Form submission handler
+// Prevent native browser validation/navigation
+form.setAttribute('novalidate', 'novalidate');
+
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     
@@ -63,6 +66,16 @@ form.addEventListener('submit', async (e) => {
         hideLoading();
         displayErrorResult(`Network error: ${error.message}. Please ensure the backend server is running.`);
     }
+    return false; // extra guard to prevent any default navigation
+});
+
+// Surface unexpected JS errors to the UI instead of silently reloading
+window.addEventListener('error', (event) => {
+    try {
+        hideLoading();
+    } catch (_) {}
+    const message = event?.error?.message || event?.message || 'Unexpected error';
+    displayErrorResult(`Unexpected error: ${message}`);
 });
 
 // Input validation
