@@ -85,7 +85,7 @@ Predict crop recommendation based on input features.
 ```json
 {
   "best_crop": "rice",
-  "confidence": 95.2,
+  "confidence": 100,
   "message": "Recommended crop: rice",
   "top_predictions": [
     { "crop": "rice", "probability": 95.2 },
