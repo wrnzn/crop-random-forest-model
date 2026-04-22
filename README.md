@@ -1,8 +1,8 @@
-# 🌱 Crop Recommendation System
+#  Crop Recommendation System
 
 A full-stack web application that uses machine learning to recommend the best crops based on soil and climate conditions. The system uses a trained Random Forest Classifier with a LabelEncoder for crop name mapping.
 
-## 🚀 Features
+##  Features
 
 - **AI-Powered Predictions**: Uses a trained Random Forest model with LabelEncoder
 - **Comprehensive Input Validation**: Validates all soil and climate parameters
@@ -12,7 +12,7 @@ A full-stack web application that uses machine learning to recommend the best cr
  - **Adaptive Chart**: Responsive bar chart visualizing top-3 prediction confidences
 - **Error Handling**: Robust error handling for invalid inputs and network issues
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.7+
 - Flask
@@ -22,7 +22,7 @@ A full-stack web application that uses machine learning to recommend the best cr
   - `crop_recommendation_model.pkl`
   - `label_encoder.pkl`
 
-## 🛠️ Installation
+##  Installation
 
 ### 1. Clone/Download the Project
 ```bash
@@ -40,7 +40,7 @@ Place your trained model files in the root directory (same level as `app.py`):
 - `crop_recommendation_model.pkl` - Your trained Random Forest model
 - `label_encoder.pkl` - Your LabelEncoder for crop name mapping
 
-## 🚀 Running the Application
+##  Running the Application
 
 ### Backend (Flask Server)
 ```bash
@@ -110,7 +110,7 @@ Check server health and model status.
 ### GET /
 API documentation and usage information.
 
-## 🎯 Input Parameters
+##  Input Parameters
 
 | Parameter | Description | Range | Unit |
 |-----------|-------------|-------|------|
@@ -132,7 +132,7 @@ API documentation and usage information.
 
 If your soil report uses different units (e.g., kg/ha), convert to mg/kg before entering. Mixing units can distort predictions.
 
-## 🎨 Frontend Features
+##  Frontend Features
 
 - **Responsive Design**: Works on desktop, tablet, and mobile
 - **Input Validation**: Client-side validation with helpful error messages
@@ -142,7 +142,7 @@ If your soil report uses different units (e.g., kg/ha), convert to mg/kg before 
  - **Prediction Chart**: Adaptive Chart.js bar chart for top-3 confidences
 - **Error Handling**: User-friendly error messages for various scenarios
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -170,7 +170,7 @@ If your soil report uses different units (e.g., kg/ha), convert to mg/kg before 
 - Use the `/health` endpoint to verify both models are loaded
 - The frontend includes connection status indicators
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 crop-recommendation-system/
@@ -184,7 +184,7 @@ crop-recommendation-system/
 └── README.md                           # This file
 ```
 
-## 🎯 Usage Example
+##  Usage Example
 
 1. **Start the backend:**
    ```bash
@@ -204,7 +204,7 @@ crop-recommendation-system/
    - Review your input summary
    - Try different values for new predictions
 
-## 🔮 How It Works
+##  How It Works
 
 1. **User Input**: Farmer enters soil and climate data through the web form
 2. **Data Validation**: Both frontend and backend validate the input parameters
